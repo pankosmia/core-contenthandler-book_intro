@@ -82,11 +82,32 @@ export async function getFirstChapterBCVNotes(
   }
 }
 
+export async function getFirstBookBNotes(
+  currentProjectRefCurr,
+  debugRefCurr,
+  bookCode,
+) {
+  const projectPath = `${currentProjectRefCurr.source}/${currentProjectRefCurr.organization}/${currentProjectRefCurr.project}`;
+  const response = await getText(
+    `/api/burrito/ingredient/raw/${projectPath}?ipath=${bookCode}.md`,
+    debugRefCurr,
+  );
+  if (response.ok) {
+    const firstCol = response.text
+
+    if (firstCol.length > 0) {
+      postEmptyJson(
+        `/api/navigation/bcv/${bookCode}/1/1`,
+        debugRefCurr,
+      );
+    }
+  }
+}
 export function getFirstChapter(flavor) {
   switch (flavor) {
     case "x-juxtalinear":
       return getFirstChapterJuxta;
     default:
-      return getFirstChapterBCVNotes;
+      return getFirstBookBNotes;
   }
 }
