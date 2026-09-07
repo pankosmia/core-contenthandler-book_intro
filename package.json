@@ -1,8 +1,8 @@
 {
-  "name": "core-contenthandler_BNotes",
+  "name": "core-contenthandler-BNotes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/clients/core-contenthandler_BNotes",
+  "homepage": "/clients/core-contenthandler-BNotes",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",

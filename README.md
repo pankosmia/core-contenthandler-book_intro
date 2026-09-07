@@ -1,3 +1,3 @@
-# core-contenthandler_BNotes
+# core-contenthandler-BNotes
 
-core-contenthandler_BNotes
+core-contenthandler-BNotes

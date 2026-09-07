@@ -2,7 +2,7 @@
   "name": "pankosmia-BNotes-muncher",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://github.com/pankosmia/core-contenthandler_BNotes",
+  "homepage": "https://github.com/pankosmia/core-contenthandler-BNotes",
   "main": "munchersPackageExport/bcv-BNotes-muncher-rcl.umd.js",
   "module": "munchersPackageExport/bcv-BNotes-muncher-rcl.es.js",
   "files": [
