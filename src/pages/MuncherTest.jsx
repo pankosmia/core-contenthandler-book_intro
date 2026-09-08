@@ -7,9 +7,9 @@ import {
 } from "pankosmia-rcl";
 import { useContext, useState, useEffect } from "react";
 import { getJson } from "pankosmia-lib/http";
-import { WrapperNav } from "../components/BookIntroMuncher/wrapperMuncher/WrapperNav";
+import { WrapperNav } from "../components/bookIntroMuncher/wrapperMuncher/WrapperNav";
 import { Padding } from "@mui/icons-material";
-import BookIntroViewerMuncher from "../components/BookIntroMuncher/muncher/Viewer/BookIntroViewerMuncher";
+import BookIntroViewerMuncher from "../components/bookIntroMuncher/muncher/Viewer/BookIntroViewerMuncher";
 
 export function MuncherTest() {
   const { systemBcv } = useContext(bcvContext);
