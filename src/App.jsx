@@ -27,7 +27,7 @@ function App() {
       <Grid size={12}>
         <h1>
           {doI18n(
-            "pages:core-contenthandler-BNotes:stub_content",
+            "pages:core-contenthandler-book_intro:stub_content",
             i18nRef.current,
           )}
         </h1>

@@ -7,9 +7,9 @@ import {
 } from "pankosmia-rcl";
 import { useContext, useState, useEffect } from "react";
 import { getJson } from "pankosmia-lib/http";
-import { WrapperNav } from "../components/BNotesMuncher/wrapperMuncher/WrapperNav";
+import { WrapperNav } from "../components/BookIntroMuncher/wrapperMuncher/WrapperNav";
 import { Padding } from "@mui/icons-material";
-import BNotesViewerMuncher from "../components/BNotesMuncher/muncher/Viewer/BNotesViewerMuncher";
+import BookIntroViewerMuncher from "../components/BookIntroMuncher/muncher/Viewer/BookIntroViewerMuncher";
 
 export function MuncherTest() {
   const { systemBcv } = useContext(bcvContext);
@@ -31,7 +31,7 @@ export function MuncherTest() {
           setCurrentBurrito([projectPath, entry]);
         } else {
           enqueueSnackbar(
-            `${doI18n("pages:core-contenthandler-BNotes:error", i18nRef.current)}: ${fullMetadataResponse.status}`,
+            `${doI18n("pages:core-contenthandler-book_intro:error", i18nRef.current)}: ${fullMetadataResponse.status}`,
             { variant: "error" },
           );
         }
@@ -67,7 +67,7 @@ export function MuncherTest() {
       >
         {metadata && (
           <Box sx={{ flex: 1, margin: 2 }}>
-            <BNotesViewerMuncher
+            <BookIntroViewerMuncher
               metadata={metadata}
               debugRef={debugRef}
               i18nRef={i18nRef}

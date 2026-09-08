@@ -1,5 +1,5 @@
 {
-  "id": "core-contenthandler-BNotes",
+  "id": "core-contenthandler-book_intro",
   "exclude_from_menu": true,
   "exclude_from_dashboard": true,
   "minServerVersion": "0.12.14",
@@ -10,10 +10,10 @@
 
   "i18n": {
     "title": {
-      "en": "core-contenthandler-BNotes"
+      "en": "core-contenthandler-book_intro"
     },
     "summary": {
-      "en": "core-contenthandler-BNotes"
+      "en": "core-contenthandler-book_intro"
     },
     "stub_content": {
       "en": "Content goes here"

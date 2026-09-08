@@ -21,7 +21,7 @@ export default defineConfig(({ mode }) => {
     },
     build: isMuncher
       ? {
-          outDir: "src/components/BNotesMuncher/munchersPackageExport",
+          outDir: "src/components/bookIntroMuncher/munchersPackageExport",
           emptyOutDir: true,
           sourcemap: true,
 
@@ -34,7 +34,7 @@ export default defineConfig(({ mode }) => {
               "pankosmia-rcl",
             ],
             output: {
-              name: "BNotesMunchersRcl",
+              name: "bookIntroMunchersRcl",
               globals: {
                 react: "React",
                 "react-dom": "ReactDOM",
@@ -48,10 +48,10 @@ export default defineConfig(({ mode }) => {
           lib: {
             entry: path.resolve(
               __dirname,
-              "./src/components/BNotesMuncher/muncher/index.js",
+              "./src/components/bookIntroMuncher/muncher/index.js",
             ),
             name: "pankosmiaRcl",
-            fileName: (format) => `bcv-BNotes-muncher-rcl.${format}.js`,
+            fileName: (format) => `book_intro-muncher-rcl.${format}.js`,
           },
         }
       : {
@@ -59,6 +59,6 @@ export default defineConfig(({ mode }) => {
           emptyOutDir: true,
           sourcemap: true,
         },
-    base: "/clients/core-contenthandler-BNotes/",
+    base: "/clients/core-contenthandler-book_intro",
   };
 });

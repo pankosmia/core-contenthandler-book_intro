@@ -82,7 +82,7 @@ export async function getFirstChapterBCVNotes(
   }
 }
 
-export async function getFirstBookBNotes(
+export async function getFirstBookBookIntro(
   currentProjectRefCurr,
   debugRefCurr,
   bookCode,
@@ -108,6 +108,6 @@ export function getFirstChapter(flavor) {
     case "x-juxtalinear":
       return getFirstChapterJuxta;
     default:
-      return getFirstBookBNotes;
+      return getFirstBookBookIntro;
   }
 }

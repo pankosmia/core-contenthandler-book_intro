@@ -5,7 +5,7 @@ import { getText } from "pankosmia-lib/http";
 import { doI18n } from "pankosmia-lib/i18n";
 import TextDir from "../helpers/TextDir";
 
-function BNotesViewerMuncher({ metadata, systemBcv, debugRef, i18nRef }) {
+function BookIntroViewerMuncher({ metadata, systemBcv, debugRef, i18nRef }) {
   const [ingredient, setIngredient] = useState("");
   const [textDir, setTextDir] = useState(
     metadata?.script_direction
@@ -56,4 +56,4 @@ function BNotesViewerMuncher({ metadata, systemBcv, debugRef, i18nRef }) {
   );
 }
 
-export default BNotesViewerMuncher;
+export default BookIntroViewerMuncher;

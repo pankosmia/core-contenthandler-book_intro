@@ -1,3 +1,3 @@
-# core-contenthandler-BNotes
+# core-contenthandler-book_intro
 
-core-contenthandler-BNotes
+core-contenthandler-book_intro
