@@ -10,7 +10,7 @@ import { getJson } from "pankosmia-lib/http";
 import { WrapperNav } from "../components/bookIntroMuncher/wrapperMuncher/WrapperNav";
 import { Padding } from "@mui/icons-material";
 import BookIntroViewerMuncher from "../components/bookIntroMuncher/muncher/Viewer/BookIntroViewerMuncher";
-
+import { Header } from "pankosmia-rcl";
 export function MuncherTest() {
   const { systemBcv } = useContext(bcvContext);
   const { currentProjectRef } = useContext(currentProjectContext);
@@ -51,18 +51,25 @@ export function MuncherTest() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        margin: 3,
-        height: "98vh",
+        height: "100%",
+        overflow: "hidden",
       }}
     >
-      <WrapperNav flavor={"x-bnotes"} />
-
+      <Box>
+        <Header
+          titleKey={"pages:core-contenthandler-book_intro:titleMuncherTest"}
+          currentId="content"
+          requireNet={false}
+        />
+      </Box>
+      <Box sx={{ paddingLeft: 2, paddingTop: 2 }}>
+        <WrapperNav flavor={"x-bnotes"} />
+      </Box>
       <Box
         sx={{
           display: "flex",
           width: "100%",
           overflowY: "scroll",
-          paddingTop: 5,
         }}
       >
         {metadata && (
