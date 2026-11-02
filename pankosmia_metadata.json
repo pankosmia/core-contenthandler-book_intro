@@ -5,7 +5,9 @@
     "net": false,
     "debug": true
   },
-
+  "enpoints": {
+    "x-bnotes": {}
+  },
   "i18n": {
     "title": {
       "en": "core-contenthandler-book_intro"
